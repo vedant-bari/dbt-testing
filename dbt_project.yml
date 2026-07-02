@@ -1,0 +1,17 @@
+name: ecommerce_project
+version: '1.0'
+config-version: 2
+
+model-paths: ["models"]
+
+models:
+  ecommerce_project:
+
+    staging:
+      +materialized: view
+
+    transform:
+      +materialized: view
+
+    marts:
+      +materialized: table
